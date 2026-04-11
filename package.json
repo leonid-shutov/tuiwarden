@@ -1,6 +1,6 @@
 {
   "name": "tuiwarden",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "scripts": {
     "start": "dotenv -- node tuigram.js",
     "fmt": "prettier --write .",
@@ -10,7 +10,7 @@
     "tuiwarden": "./cli.js"
   },
   "dependencies": {
-    "@leonid-shutov/uncommonjs": "^1.0.0-alpha.10",
+    "@leonid-shutov/uncommonjs": "^1.0.0-alpha.12",
     "blessed": "^0.1.81"
   },
   "devDependencies": {
