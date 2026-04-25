@@ -1,6 +1,6 @@
 {
   "name": "tuiwarden",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.3",
   "scripts": {
     "start": "dotenv -- node tuigram.js",
     "fmt": "prettier --write .",
