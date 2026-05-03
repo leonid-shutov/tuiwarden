@@ -1,6 +1,9 @@
 {
   "name": "tuiwarden",
   "version": "1.0.0-alpha.5",
+  "repository": {
+    "url": "https://github.com/leonid-shutov/tuiwarden"
+  },
   "scripts": {
     "fmt": "prettier --write .",
     "lint": "eslint ."
