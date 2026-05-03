@@ -1,6 +1,8 @@
 ({
   unlock: async (master) => {
-    const session = await Shell.exec('bw', ['unlock', '--raw'], { input: master });
+    const params = ['unlock', '--raw', '--nointeraction', '--passwordenv', 'BW_PASSWORD'];
+    const options = { env: { BW_PASSWORD: master, ...process.env } };
+    const session = await Shell.exec('bw', params, options);
 
     const getItems = async () => {
       const output = await Shell.exec('bw', ['list', 'items', '--session', session]);

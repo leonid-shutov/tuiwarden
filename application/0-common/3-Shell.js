@@ -5,7 +5,7 @@ const { child_process: cp } = node;
     let resolved = false;
     const { promise, resolve, reject } = Promise.withResolvers();
 
-    const p = cp.spawn(command, args);
+    const p = cp.spawn(command, args, { env: options?.env ?? process.env });
 
     p.on('error', reject);
 
