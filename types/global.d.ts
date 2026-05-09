@@ -1,10 +1,10 @@
-import * as _blessed from 'blessed';
+import * as opentui from '@opentui/core';
 
 import * as _timers from 'node:timers';
 import * as _events from 'node:events';
 
 declare global {
-  const blessed: typeof _blessed;
+  const tui: typeof opentui;
 
   namespace node {
     const timers: typeof _timers;

@@ -1,15 +1,14 @@
-const input = blessed.textbox({
-  parent: $.container,
-  top: 1,
-  height: 1,
-  width: 50,
-  inputOnFocus: true,
-  censor: true,
-  keys: true,
+const input = new tui.InputRenderable(ui.renderer, {
+  id: 'search',
+  width: 34,
+  placeholder: 'Type to search...',
+  backgroundColor: '#1a1a1a',
+  focusedBackgroundColor: '#2d2d2d',
+  textColor: '#ffffff',
+  cursorColor: '#00ff88',
 });
 
 input.focus();
-
-ui.screen.render();
+$.container.add(input);
 
 input;

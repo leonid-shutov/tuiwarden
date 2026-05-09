@@ -12,6 +12,7 @@ module.exports = [
       'no-nested-ternary': 'off',
       camelcase: 'off',
       curly: 'off',
+      'new-cap': 'off',
     },
     languageOptions: {
       sourceType: 'module',
@@ -27,7 +28,7 @@ module.exports = [
         ui: true,
         pm: true,
         common: true,
-        blessed: true,
+        tui: true,
         Text: true,
         Box: true,
         Clipboard: true,

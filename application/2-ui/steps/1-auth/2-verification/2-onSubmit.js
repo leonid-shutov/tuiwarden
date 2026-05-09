@@ -1,11 +1,11 @@
-const masterInput = ui.steps.auth.component;
+const component = ui.steps.auth.component;
 
-masterInput.on('submit', async (master) => {
+component.input.on(tui.InputRenderableEvents.ENTER, async (master) => {
   try {
     await pm.unlock(master);
-    ui.screen.children.forEach((child) => child.destroy());
+    ui.screen.remove(component.container.id);
     $.resolver.resolve();
   } catch {
-    masterInput.displayError();
+    component.input.displayError();
   }
 });
